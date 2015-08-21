@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.current-time{
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.wrapper{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    font-size: 4em;
+}
+.row{
+    width: 100%;
+    display: block;
+}
+.quarter{
+    width: 25%;
+    float: left;
+}
+.third{
+    width: 33%;
+    float: left;
+}
+
+.ten{
+    width: 10%;
+    float: left;
+}
+.twenty {
+    width: 20%;
+    float: left;
+}
+.thirty {
+    width: 30%;
+    float: left;
+}
+
+.fourty{
+    width: 40%;
+    float: left;
+}
+.fifty {
+    width: 50%;
+    float: left;
+}
+.sixty{
+    width: 60%;
+    float: left;
+}
+.seventy{
+    width: 70%;
+    float: left;
+}
+.eighty{
+    width: 80%;
+    float: left;
+}
+.ninety{
+    width: 90%;
+    float: left;
+}
+.full{
+    width: 100%;
+    float: left;
+}
+
+#digital-clock{
+    position: absolute;
+    left: -100px;
+    font-size: 12px;
+}
