@@ -1,0 +1,118 @@
+@import "partials/variables";
+@import "partials/reset";
+
+body{
+  background-color: $primary-color;
+}
+.wrapper{
+  position: relative;
+  height: $window-height;
+  width: $window-width;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20vh;
+  border: 5px solid #ccc;
+  @include font-choice($font-chosen, $weight, $size);
+}
+
+.row{
+  width: 100%;
+  display: block;
+  .quarter{
+    width: 25%;
+    float: left;
+  }.third{
+    width: 33%;
+    float: left;
+  }.ten{
+    width: 10%;
+    float: left;
+  }.twenty {
+    width: 20%;
+    float: left;
+  }.thirty {
+    width: 30%;
+    float: left;
+  }.fourty{
+    width: 40%;
+    float: left;
+  }.fifty {
+    width: 50%;
+    float: left;
+  }.sixty{
+    width: 60%;
+    float: left;
+  }.seventy{
+    width: 70%;
+    float: left;
+  }.eighty{
+    width: 80%;
+    float: left;
+  }.ninety{
+    width: 90%;
+    float: left;
+  }.full{
+    width: 100%;
+    float: left;
+  }
+}
+
+.current-time{
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white/*#d2d2d2*/;
+  -webkit-animation-name: current-time-animation;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+#digital-clock{
+  position: absolute;
+  left: -50px;
+  font-size: 12px;
+}
+
+
+/*
+  * Hour Marker styling section
+*/
+// Row One
+#it {@include placement(20px);}
+#is{@include placement(20px);}
+#half{@include placement(20px);}
+#ten-relation{@include placement(40px);}
+
+//Row Two
+#quarter {@include placement(20px);}
+#twenty-relation{@include placement(46px);}
+#fiveQual-relation{@include placement(40px);}
+
+// Row Three
+#minutes{@include placement(50px);}
+#to{@include placement(54px);}
+#past{@include placement(0);}
+
+
+// Row Four
+#one{@include placement(20px);}
+#two{@include placement(30px);}
+#three{@include placement(10px);}
+#four{@include placement(15px);}
+
+//Row Five
+#five{@include placement(50px);}
+#six{@include placement(54px);}
+#seven{@include placement(-10px);}
+
+// Row Six
+#eight{@include placement(50px);}
+#nine{@include placement(54px);}
+#ten{@include  placement(-10px);}
+
+// Row Seven
+#eleven{@include placement(20px);}
+#twelve{@include placement(10px);}
+#oclock{@include placement(10px);}
+
+

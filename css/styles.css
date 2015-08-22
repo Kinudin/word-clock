@@ -1,3 +1,185 @@
+@-webkit-keyframes current-time-animation {
+  from {
+    -webkit-text-stroke: 4px;
+    -webkit-text-stroke-color: white;
+    text-shadow: none; }
+  50% {
+    -webkit-text-stroke: 6px;
+    -webkit-text-stroke-color: #2582bb;
+    text-shadow: green; }
+  to {
+    -webkit-text-stroke: 4px;
+    -webkit-text-stroke-color: white;
+    text-shadow: none; } }
+/*
+  Leverage Scss
+*/
+* {
+  margin: 0;
+  padding: 0;
+  color: white; }
 
+body {
+  background-color: #000; }
+
+.wrapper {
+  position: relative;
+  height: 250px;
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20vh;
+  border: 5px solid #ccc;
+  font-family: proxima-nova;
+  font-weight: 100;
+  font-size: 30px; }
+
+.row {
+  width: 100%;
+  display: block; }
+  .row .quarter {
+    width: 25%;
+    float: left; }
+  .row .third {
+    width: 33%;
+    float: left; }
+  .row .ten {
+    width: 10%;
+    float: left; }
+  .row .twenty {
+    width: 20%;
+    float: left; }
+  .row .thirty {
+    width: 30%;
+    float: left; }
+  .row .fourty {
+    width: 40%;
+    float: left; }
+  .row .fifty {
+    width: 50%;
+    float: left; }
+  .row .sixty {
+    width: 60%;
+    float: left; }
+  .row .seventy {
+    width: 70%;
+    float: left; }
+  .row .eighty {
+    width: 80%;
+    float: left; }
+  .row .ninety {
+    width: 90%;
+    float: left; }
+  .row .full {
+    width: 100%;
+    float: left; }
+
+.current-time {
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;
+  -webkit-animation-name: current-time-animation;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+#digital-clock {
+  position: absolute;
+  left: -50px;
+  font-size: 12px; }
+
+/*
+  * Hour Marker styling section
+*/
+#it {
+  position: relative;
+  left: 20px; }
+
+#is {
+  position: relative;
+  left: 20px; }
+
+#half {
+  position: relative;
+  left: 20px; }
+
+#ten-relation {
+  position: relative;
+  left: 40px; }
+
+#quarter {
+  position: relative;
+  left: 20px; }
+
+#twenty-relation {
+  position: relative;
+  left: 46px; }
+
+#fiveQual-relation {
+  position: relative;
+  left: 40px; }
+
+#minutes {
+  position: relative;
+  left: 50px; }
+
+#to {
+  position: relative;
+  left: 54px; }
+
+#past {
+  position: relative;
+  left: 0; }
+
+#one {
+  position: relative;
+  left: 20px; }
+
+#two {
+  position: relative;
+  left: 30px; }
+
+#three {
+  position: relative;
+  left: 10px; }
+
+#four {
+  position: relative;
+  left: 15px; }
+
+#five {
+  position: relative;
+  left: 50px; }
+
+#six {
+  position: relative;
+  left: 54px; }
+
+#seven {
+  position: relative;
+  left: -10px; }
+
+#eight {
+  position: relative;
+  left: 50px; }
+
+#nine {
+  position: relative;
+  left: 54px; }
+
+#ten {
+  position: relative;
+  left: -10px; }
+
+#eleven {
+  position: relative;
+  left: 20px; }
+
+#twelve {
+  position: relative;
+  left: 10px; }
+
+#oclock {
+  position: relative;
+  left: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
