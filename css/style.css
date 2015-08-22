@@ -6,28 +6,40 @@
 }
 
 
+@-webkit-keyframes current-time-animation {
+    from {-webkit-text-stroke: 4px; -webkit-text-stroke-color: white; text-shadow: none;}
+    50% { -webkit-text-stroke: 6px; -webkit-text-stroke-color: #2e82bb; text-shadow: green;}
+    to {-webkit-text-stroke: 4px; -webkit-text-stroke-color: white; text-shadow: none;}
+}
 
 .wrapper{
     position: relative;
     width: 960px;
+    padding: 20px;
     margin: 0 auto;
+    margin-top: 20vh;
+    border: 5px solid #ccc;
+    height: 470px;
     font-family: "proxima-nova",sans-serif;
     font-weight: 100;
     font-size: 3em;
+
 }
 
 .row{
     width: 100%;
     display: block;
-    /*opacity: .5;*/
 }
 
 .current-time{
     /*color: red;*/
     -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #d2d2d2;
-    text-shadow: 0 0 20px white;
-    opacity: 1.0;
+    -webkit-text-stroke-color: white/*#d2d2d2*/;
+    /*text-shadow: 0 0 300px #ccc;*/
+    -webkit-animation-name: current-time-animation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .quarter{

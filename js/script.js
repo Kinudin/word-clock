@@ -126,35 +126,57 @@ function changeHours(hours, minutes, seconds){
     }
     else if (hours == 2 || hours == 14){
         console.log('Hour: 2');
-        two.className       = "current-time";
-        one.className       = "quarter";
-        if(minutes > 7 && minutes < 13){
-            ten.className = "current-time";
-        } else if(minutes > 17 && minutes < 14){
-            quarter.className = "third current-time";
-            ten.className  = "quarter";
-        }else if(minutes > 22 && minutes < 18){
-            twenty.className = "third current-time";
-            quarter.className = "third";
-        }else if(minutes > 28 || minutes < 37){
-            half.className = "quarter current-time";
-            twenty.className = "third";
-        }else if(minutes > 38 || minutes < 48){
-            quarter.className = "third current-time";
-            to.className = "third current-time";
-            half.className = "quarter";
-        }else if(minutes > 49 || minutes < 53){
-            ten.className = "third current-time";
-            to.className = "third current-time";
-            quarter.className = "third";
-        }else if (minutes < 59 || minutes >53){
-            five.className = "third current-time";
-            to.className = "third current-time";
-            ten.className = "third";
+
+        // Block determining the minutes, and switches
+        // on or off the current-time from current time qualifier
+        if(minutes<=6 && minutes >=3 ){
+            console.log('Hours: ' + hours + 'Minutes: ' + minutes);
+            fveQual.className   = "third current-time";
+            past.className      = "third current-time";
+
+        }else if(minutes <= 13 && minutes >= 7){
+            console.log('Hours: ' + hours + 'Minutes: ' + minutes);
+            tenQual.className   = "quarter current-time";
+            past.className      = "third current-time";
+            fveQual.className = "third";
+        }else if(minutes <= 17 && minutes >= 14){
+            quarter.className   = "third current-time";
+            past.className      = "third current-time";
+            tenQual.className   = "quarter";
+        }else if(minutes <= 22 && minutes >= 18){
+            twenty.className    = "third current-time";
+            past.className      = "third current-time";
+            quarter.className   = "third";
+        }else if(minutes <= 37 && minutes >= 23){
+            console.log('half');
+            half.className      = "quarter current-time";
+            past.className      = "third";
+            twenty.className    = "third";
+        }else if(minutes <= 48 && minutes >= 38){
+            console.log('Quarter to');
+            quarter.className   = "third current-time";
+            to.className        = "third current-time";
+            half.className      = "quarter";
+            twelve.className    = "third";
+            one.className       = "quarter current-time";
+        }else if(minutes <= 53 && minutes >= 49){
+            console.log('Ten To');
+            tenQual.className   = "third current-time";
+            to.className        = "third current-time";
+            quarter.className   = "third";
+            twelve.className    = "third";
+            two.className       = "quarter current-time";
+        }else if (minutes <= 59 && minutes >=53){
+            fveQual.className   = "third current-time";
+            to.className        = "third current-time";
+            tenQual.className   = "third";
+            twelve.className    = "third";
+            two.className       = "quarter current-time";
         }
 
     }
     else if (hours == 3 || hours == 15){
+        //console.log('Hour ' + hours);
         three.className = "current-time";
         two.className       = "third";
 
@@ -190,26 +212,31 @@ function changeHours(hours, minutes, seconds){
             to.className        = "third current-time";
             half.className      = "quarter";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
-        }else if(minutes <= 53 && minutes >= 49){
+            four.className       = "quarter current-time";
+            three.className     = "third";
+        }else if(minutes <= 52 && minutes >= 49){
             console.log('Ten To');
             tenQual.className   = "third current-time";
             to.className        = "third current-time";
             quarter.className   = "third";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
-        }else if (minutes < 59 && minutes >53){
+            four.className      = "quarter current-time";
+            three.className     = "third"
+        }else if (minutes <= 59 && minutes >=53){
+            console.log('Five to');
             fveQual.className   = "third current-time";
             to.className        = "third current-time";
             tenQual.className   = "third";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            four.className      = "quarter current-time";
+            three.className     = "third";
         }
     }
     else if (hours == 4 || hours == 16){
-        four.className = "current-time";
-        three.className       = "third";
-
+        four.className          = "current-time";
+        three.className         = "third";
+        to.className            = "third";
+        five.className          = "third";
 
         // Block determining the minutes, and switches
         // on or off the current-time from current time qualifier
@@ -217,6 +244,7 @@ function changeHours(hours, minutes, seconds){
             console.log('Hours: ' + hours + 'Minutes: ' + minutes);
             fveQual.className   = "third current-time";
             past.className      = "third current-time";
+            four.className      = "quarter current-time";
 
         }else if(minutes <= 13 && minutes >= 7){
             console.log('Hours: ' + hours + 'Minutes: ' + minutes);
@@ -242,20 +270,23 @@ function changeHours(hours, minutes, seconds){
             to.className        = "third current-time";
             half.className      = "quarter";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            four.className       = "quarter current-time";
+            four.className     = "third";
         }else if(minutes <= 53 && minutes >= 49){
             console.log('Ten To');
             tenQual.className   = "third current-time";
             to.className        = "third current-time";
             quarter.className   = "third";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            four.className      = "quarter current-time";
+            four.className     = "third"
         }else if (minutes < 59 && minutes >53){
             fveQual.className   = "third current-time";
             to.className        = "third current-time";
             tenQual.className   = "third";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            four.className      = "quarter current-time";
+            four.className     = "third";
         }
     }
     else if (hours == 5 || hours == 17){
@@ -294,20 +325,20 @@ function changeHours(hours, minutes, seconds){
             to.className        = "third current-time";
             half.className      = "quarter";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            six.className       = "quarter current-time";
         }else if(minutes <= 53 && minutes >= 49){
             console.log('Ten To');
             tenQual.className   = "third current-time";
             to.className        = "third current-time";
             quarter.className   = "third";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            six.className       = "quarter current-time";
         }else if (minutes < 59 && minutes >53){
             fveQual.className   = "third current-time";
             to.className        = "third current-time";
             tenQual.className   = "third";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            six.className       = "quarter current-time";
         }
     }
     else if (hours == 6 || hours == 18){
@@ -657,7 +688,7 @@ function changeHours(hours, minutes, seconds){
             to.className        = "third current-time";
             half.className      = "quarter";
             twelve.className    = "third";
-            one.className       = "quarter current-time";
+            four.className       = "quarter current-time";
         }else if(minutes <= 53 && minutes >= 49){
             console.log('Ten To');
             tenQual.className   = "third current-time";
