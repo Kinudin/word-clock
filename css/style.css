@@ -5,25 +5,31 @@
     color: white;
 }
 
-.current-time{
-    color: red;
-    -webkit-text-stroke-width: .25px;
-    -webkit-text-stroke-color: #d2d2d2;
-    text-shadow: 0 0 10px white;
-}
+
 
 .wrapper{
     position: relative;
     width: 960px;
     margin: 0 auto;
     font-family: "proxima-nova",sans-serif;
+    font-weight: 100;
     font-size: 3em;
 }
 
 .row{
     width: 100%;
     display: block;
+    /*opacity: .5;*/
 }
+
+.current-time{
+    /*color: red;*/
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #d2d2d2;
+    text-shadow: 0 0 20px white;
+    opacity: 1.0;
+}
+
 .quarter{
     width: 25%;
     float: left;
@@ -83,7 +89,7 @@
 
 #half{
     position: relative;
-    left: ;
+    /*left: 50px;*/
 }
 
 #one{
