@@ -3,48 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Word Clock</title>
+    <script src="//use.typekit.net/isb0chc.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <div class="wrapper">
     <div id="digital-clock"></div>
     <div class="row">
-        <div class="quarter current-time">IT</div>
+        <div class="quarter current-time" id="it">IT</div>
         <div class="quarter current-time" id="is">IS</div>
         <div class="quarter" id="half">HALF</div>
         <div class="quarter" id="ten-relation">TEN</div>
     </div>
 
     <div class="row">
-        <div class="fifty" id="quarter">QUARTER</div>
-        <div class="fifty" id="twenty">TWENTY</div>
+        <div class="third" id="quarter">QUARTER</div>
+        <div class="third" id="twenty">TWENTY</div>
+        <div class="third" id="twenty">FIVE</div>
     </div>
     <div class="row">
-        <div class="twenty" id="five-relation">FIVE</div>
-        <div class="third" id="minutes">MINUTES</div>
-        <div class="third" id="to">TO</div>
+        <div class="third" id="five-relation">MINUTES</div>
+        <div class="third" id="minutes">TO</div>
+        <div class="third" id="to">PAST</div>
     </div>
     <div class="row">
-        <div class="quarter" id="past">PAST</div>
         <div class="quarter" id="one">ONE</div>
-        <div class="quarter" id="three">THREE</div>
         <div class="quarter" id="two">TWO</div>
+        <div class="quarter" id="three">THREE</div>
+        <div class="quarter" id="three">FOUR</div>
+
     </div>
     <div class="row">
-        <div class="quarter" id="four">FOUR</div>
-        <div class="quarter" id="six">SIX</div>
-        <div class="quarter" id="seven">SEVEN</div>
-        <div class="quarter" id="eight">EIGHT</div>
+        <div class="third" id="five">FIVE</div>
+        <div class="third" id="six">SIX</div>
+        <div class="third" id="seven">SEVEN</div>
     </div>
     <div class="row">
-        <div class="quarter" id="five">FIVE</div>
-        <div class="quarter" id="nine">NINE</div>
-        <div class="quarter" id="ten">TEN</div>
-        <div class="quarter" id="eleven">ELEVEN</div>
+        <div class="third" id="eight">EIGHT</div>
+        <div class="third" id="nine">NINE</div>
+        <div class="third" id="ten">TEN</div>
     </div>
     <div class="row">
-        <div class="fifty" id="twelve">TWELVE</div>
-        <div class="fifty current-time" id="oclock">O'CLOCK</div>
+        <div class="third" id="eleven">ELEVEN</div>
+        <div class="third" id="twelve">TWELVE</div>
+        <div class="third current-time" id="oclock">O'CLOCK</div>
     </div>
 
 
