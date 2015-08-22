@@ -92,7 +92,6 @@ function changeHours(hours, minutes, seconds){
             console.log('FIve past');
             fveQual.className   = "third current-time";
             past.className      = "third current-time";
-            eleven.className    = "third current-time";
         }else if(minutes <= 13 && minutes >= 7){
             console.log('Ten past');
             tenQual.className   = "quarter current-time";
