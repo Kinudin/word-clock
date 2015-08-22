@@ -13,15 +13,12 @@ $highlight-color: #2582bb;
 
 @-webkit-keyframes current-time-animation {
   from {-webkit-text-stroke: 4px; -webkit-text-stroke-color: white; text-shadow: none;}
-  50% { -webkit-text-stroke: 6px; -webkit-text-stroke-color: $highlight-color; text-shadow: green;}
+  50% { -webkit-text-stroke: 6px; -webkit-text-stroke-color: $highlight-color;}
   to {-webkit-text-stroke: 4px; -webkit-text-stroke-color: white; text-shadow: none;}
 }
 
 
-/*
-  Leverage Scss
-*/
-
+/*Mixins*/
 @mixin font-choice($font-chosen, $weight, $size){
   font-family: $font-chosen;
   font-weight: $weight;

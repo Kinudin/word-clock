@@ -5,15 +5,12 @@
     text-shadow: none; }
   50% {
     -webkit-text-stroke: 6px;
-    -webkit-text-stroke-color: #2582bb;
-    text-shadow: green; }
+    -webkit-text-stroke-color: #2582bb; }
   to {
     -webkit-text-stroke: 4px;
     -webkit-text-stroke-color: white;
     text-shadow: none; } }
-/*
-  Leverage Scss
-*/
+/*Mixins*/
 * {
   margin: 0;
   padding: 0;
